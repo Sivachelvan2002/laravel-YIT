@@ -1,10 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-/*Route::get('/{name?}/{color?}', function($name='home',$color='blue'){
+use Illuminate\Http\Request;
+
+Route::post('contact',function(Request $request){
+    $data = $request->all();
+    return view('pages.contact')->with('mydata',$data);
+});
+Route::get('/{name?}/{color?}', function($name='home',$color='blue'){
    // return view('pages/'.$name,["fname"=>"seelan","lname"=>"yoga"]);
     return view('pages/'.$name)->with('fname','selvan')->with('lname','siva')->with('color1',$color);
-});*/
+});
+
+/*
 Route::get('home',function(){
     return view('pages.home');
 });
@@ -14,6 +22,7 @@ Route::get('home',function(){
 Route::get('home',function(){
     return view('pages.services');
 });
+*/
 /*
 $myFunction = function(){
     return view('layout.master');
