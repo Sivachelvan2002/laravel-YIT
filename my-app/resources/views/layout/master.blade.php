@@ -7,34 +7,22 @@
     <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        ol{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-        }
-        ol li{
-           
-            list-style-type: none;
-        }
-        ol li a{
-            text-decoration: none;
-        }
         td[colspan="2"]{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #ccc;
+            
         }
         table{
             background: #58249c;
         }
+       
     </style>
 </head>
 
 <body>
     <table width=100% class="table ">
         <tr>    
-            <td colspan="2" height="100" class="text-center fs-2 mt-5 fw-bolder"> School Management System</td>
+            <td colspan="2" height="100" class="text-center fs-2 p-3 fw-bolder "> School Management System</td>
         </tr>
         <tr height="400">
             <td width=20% >
