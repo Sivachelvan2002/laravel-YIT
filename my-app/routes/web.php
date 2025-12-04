@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MyController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -7,12 +8,16 @@ use Illuminate\Http\Request;
 /*Route::get('/',function(){
     return 'sivachelvan';
 });*/
-Route::get('/',[PageController::class,'home']);
-Route::get('home',[PageController::class,'home']);
-Route::get('about',[PageController::class,'about']);
-Route::get('contact',[PageController::class,'contact']);
-Route::get('gallery',[PageController::class,'gallery']);
-Route::get('services',[PageController::class,'services']);
+Route::resource('my', MyController::class);
+
+
+
+// Route::get('/',[PageController::class,'home']);
+// Route::get('home',[PageController::class,'home']);
+// Route::get('about',[PageController::class,'about']);
+// Route::get('contact',[PageController::class,'contact']);
+// Route::get('gallery',[PageController::class,'gallery']);
+// Route::get('services',[PageController::class,'services']);
 /*
 Route::post('contact',function(Request $request){
     $data = $request->all();
