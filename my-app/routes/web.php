@@ -1,8 +1,19 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
+//Route::view('selvan','pages.gallery');
+/*Route::get('/',function(){
+    return 'sivachelvan';
+});*/
+Route::get('/',[PageController::class,'home']);
+Route::get('home',[PageController::class,'home']);
+Route::get('about',[PageController::class,'about']);
+Route::get('contact',[PageController::class,'contact']);
+Route::get('gallery',[PageController::class,'gallery']);
+Route::get('services',[PageController::class,'services']);
+/*
 Route::post('contact',function(Request $request){
     $data = $request->all();
     return view('pages.contact')->with('mydata',$data);
@@ -11,7 +22,7 @@ Route::get('/{name?}/{color?}', function($name='home',$color='blue'){
    // return view('pages/'.$name,["fname"=>"seelan","lname"=>"yoga"]);
     return view('pages/'.$name)->with('fname','selvan')->with('lname','siva')->with('color1',$color);
 });
-
+*/
 /*
 Route::get('home',function(){
     return view('pages.home');
