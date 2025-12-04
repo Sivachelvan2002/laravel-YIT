@@ -4,16 +4,20 @@
 <style>
     .form-control{
         width: 200px;
+		
     }
+	.button{
+		gap: 20px;
+	}
 </style>
 <h3 class="text-center">This is About Page</h3>
 <hr />
 <div class="d-flex flex-column justify-content-center align-items-center">
     <form action="{{url('contact')}}" method="POST" class="border">
         @csrf
-    <table class="table table-info table-hover" style="width: 34rem;">
+    <table class="table table-info table-hover " style="width: 34rem;">
     <tr>
-        <td colspan="2" class="text-center" style="color: black">Student Details</td>
+        <td colspan="2" class="text-center bg-info fs-3" style="color: black">Registration Form</td>
     </tr>
     <tr>
 		<td class="text-center"><label for="profile">Profile</label></td>
@@ -67,7 +71,7 @@
 	</tr>
 </table>
     
-    <div class="d-flex flex-row justify-content-center align-items-center">
+    <div class="d-flex flex-row justify-content-center align-items-center button">
         <input class="form-control btn btn-outline-danger" type="reset" value="Reset" >
         <input class="form-control btn btn-outline-success" type="submit" value="submit" ><br />
     </div>

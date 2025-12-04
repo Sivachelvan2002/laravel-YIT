@@ -27,11 +27,11 @@
         <tr height="400">
             <td width=20% >
                 <div class="list-group mt-5 text-center">
-                    <a href="{{url('home')}}" class="list-group-item list-group-item-action">Home</a>
-                    <a href="{{url('about')}}" class="list-group-item list-group-item-action">About</a>
-                    <a href="{{url('services')}}" class="list-group-item list-group-item-action">Services</a>
-                    <a href="{{url('gallery')}}" class="list-group-item list-group-item-action">Gallery</a>
-                    <a href="{{url('contact')}}" class="list-group-item list-group-item-action">Contact</a>
+                    <a href="{{url('home')}}" class="list-group-item list-group-item-action list-group-item-success">Home</a>
+                    <a href="{{url('about')}}" class="list-group-item list-group-item-action list-group-item-success">About</a>
+                    <a href="{{url('services')}}" class="list-group-item list-group-item-action list-group-item-success">Services</a>
+                    <a href="{{url('gallery')}}" class="list-group-item list-group-item-action list-group-item-success">Gallery</a>
+                    <a href="{{url('contact')}}" class="list-group-item list-group-item-action list-group-item-success">Contact</a>
                 </div>
             </td>
             <td width=80% style="background: white;">@yield('content')</td>

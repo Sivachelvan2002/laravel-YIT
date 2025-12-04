@@ -1,6 +1,15 @@
 @extends('layout.master')
 @section('title','school-contact')
 @section('content')
+<style>
+	.form-control{
+        width: 250px;
+		
+    }
+	.button{
+		gap: 20px;
+	}
+</style>
     <h3 class="text-center">welocome to contact page</h3>
     <hr/>
     
@@ -10,7 +19,7 @@
     
     <table class="table table-info table-hover" style="width: 34rem;">
     <tr>
-        <td colspan="2" class="text-center" style="color: black">Student Details</td>
+        <td colspan="2" class="text-center fs-3 bg-info" style="color: black">Student Details</td>
     </tr>
     <tr>
 		<td class="text-center"><label for="profile">Profile</label></td>
@@ -64,9 +73,9 @@
 	</tr>
 </table>
     
-    <div class="d-flex flex-row justify-content-center align-items-center">
-        <input type="reset" value="Reset" class="btn btn-outline-danger">
-        <input type="submit" value="update" class="btn btn-outline-info"><br />
+    <div class="d-flex flex-row justify-content-center align-items-center button">
+        <input type="submit" value="update" class="btn btn-outline-success form-control"><br />
+		<a href="{{url('about')}}" class="btn btn-outline-info form-control">Back</a>
     </div>
 
 </form>
